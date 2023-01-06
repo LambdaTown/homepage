@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{{.Title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h1>{{.Title}}</h1>
+      <p>
+        {{.Description}}
+      </p>
+
+      <h2>Najbliższe spotkania</h2>
+        <ul>
+          {{range .FutureEvents}}
+            <li>{{.Format "2006-01-02, godz. 15:04"}}</li>
+          {{end}}
+        </ul>
+
+      <h2>Poprzednie spotkania</h2>
+        <small>
+          <ul>
+            {{range .PastEvents}}
+              <li>{{.Format "2006-01-02, godz. 15:04"}}</li>
+            {{end}}
+          </ul>
+        </small>
+
+      <h2>API</h2>
+        <p>Sprawdź <a href="/metadata.json"><code>/metadata.json</code></a>.</p>
+
+  <footer><small>Made with ❤️ using Go.</small></footer>
+  </body>
+</html>
