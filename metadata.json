@@ -2,23 +2,7 @@
   "title": "Lambda Town",
   "description": "Lambda Town to wirtualne trzecie miejsce dla osób interesujących się szeroko pojętą informatyką. Są to cykliczne, nieformalne spotkania, podczas których dzielimy się spostrzeżeniami, rozmawiamy i śmiejemy się.",
   "events": [
-    {
-      "date": {
-        "year": 2023,
-        "month": 1,
-        "day": 10,
-        "hour": 22,
-        "minute": 0
-      }
-    },
-    {
-      "date": {
-        "year": 2023,
-        "month": 1,
-        "day": 12,
-        "hour": 21,
-        "minute": 0
-      }
-    }
+    "2023-01-10T22:00:00Z",
+    "2023-01-12T21:00:00Z"
   ]
 }
