@@ -36,18 +36,24 @@
           {{end}}
         </ul>
 
-      <h2>Poprzednie spotkania</h2>
-        <small>
-          <ul>
-            {{range .PastEvents}}
-              <li>{{.Format "2006-01-02, godz. 15:04"}}</li>
-            {{end}}
-          </ul>
-        </small>
+        <details>
+          <summary>Kliknij, aby rozwinąć listę poprzednich spotkań.</summary>
+          <small>
+            <ul>
+              {{range .PastEvents}}
+                <li>{{.Format "2006-01-02, godz. 15:04"}}</li>
+              {{end}}
+            </ul>
+          </small>
+        </details>
+
+      <h2>Jak dołączyć?</h2>
+        <p align="justify">Znajdź adres email do któregoś z autorów tej strony.</p>
+        <small>Nie wiesz jak? Poszukaj w repozytorium kodu :)</small>
 
       <h2>API</h2>
         <p>Sprawdź <a href="/metadata.json"><code>/metadata.json</code></a>.</p>
 
-  <footer><small>Wykonane z ❤️ przy użyciu Go. Kod źródłowy: <a href="https://github.com/LambdaTown/homepage">github.com/LambdaTown/homepage</a>.</small></footer>
+  <footer><small>Wykonane z &lt;3 przy użyciu Go. Kod źródłowy: <a href="https://github.com/LambdaTown/homepage">github.com/LambdaTown/homepage</a>.</small></footer>
   </body>
 </html>
