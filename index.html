@@ -30,11 +30,15 @@
       </p>
 
       <h2>Najbliższe spotkania</h2>
-        <ul>
-          {{range .FutureEvents}}
-            <li>{{.Format "2006-01-02, godz. 15:04"}}</li>
-          {{end}}
-        </ul>
+        {{if not .FutureEvents}}
+	  <p align="justify">Aktualnie nie ma żadnych zaplanowanych spotkań.</p>
+	{{else}}
+          <ul>
+            {{range .FutureEvents}}
+              <li>{{.Format "2006-01-02, godz. 15:04"}}</li>
+            {{end}}
+          </ul>
+	{{end}}
 
         <details>
           <summary>Kliknij, aby rozwinąć listę poprzednich spotkań.</summary>
